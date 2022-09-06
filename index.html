@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypingTest</title>
+    <link rel="shortcut icon" href="./images/random.ico" type="image/x-icon">
+    <!-- including font awesome icons -->
+    <script src="https://kit.fontawesome.com/8d8936e48f.js" crossorigin="anonymous"></script>
+    <!-- **************************** -->
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mt.css">
+    <link rel="stylesheet" href="./css/stats.css">
+    <!--     -->
+
+    <!-- Java Script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- *********** -->
+</head>
+<body>
+    <div style="display: flex; justify-content: space-around;">
+        <div class="centercontent" class style ="opacity:1;">
+            <header class="toppart">
+                <div class="lefttop">
+                    <div class="proname"><i class="fas fa-random" style="color: #ffff00;"></i>TypingTest</div>
+                    <div class="leftbuttons">
+                        <a href="index.html"  style="color: #ada9a9;"><i class="fas fa-cog fa-2x forhover"></i></a>
+                        <a href="index.html"  style="color: #ada9a9;"><i class="far fa-user fa-2x forhover"></i></a>
+                        <a href="index.html"  style="color: #ada9a9;"><i class="fas fa-crown fa-2x forhover"></i></a>
+                    </div>
+                </div>
+                <div class="righttop">
+                    <div class="group mode">
+                        <div class="buttons">
+                            <div class="text-button forhover" id="type1" mode="time" tabindex="2">time</div>
+                            <div class="text-button forhover" id="type2" mode="words" tabindex="2">words</div>
+                            <div class="text-button forhover" id="type3" mode="quote" tabindex="2">quote</div>
+                        </div>
+                    </div>
+                    <div class="group wordcount">
+                        <div class="buttons">
+                            <div class="text-button forhover" id="wordcount1"wordcount="10" tabindex="2">10</div>
+                            <div class="text-button forhover" id="wordcount2"wordcount="25" tabindex="2">25</div>
+                            <div class="text-button forhover" id="wordcount3"wordcount="50" tabindex="2">50</div>
+                            <div class="text-button forhover" id="wordcount4"wordcount="100" tabindex="2">100</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="midparts">
+                <div class="midpart1">
+                    <h2 class="timecnt">0</h2>
+                    <h2 class="timer">0</h2>
+                    <h3 class="correct">correct words:</h3>
+                    <div class="scrollable">
+                        <div class="paradisp">
+                            <div>Select no.of words first</div>
+                        </div>
+                    </div>
+                    
+                    <input type="text" class="typed">
+                    <div class="forrestart1 forhover"><i class="fas fa-redo-alt"></i></div>
+                    <!-- <button class="forrestart1">restart</button> -->
+                </div>
+                <div class="midpart2" >
+                    <div class="wpm">0</div>
+                    <div class="forrestart2 forhover"><i class="fas fa-redo-alt"></i></div>
+                </div>
+            </div>
+            <footer class="bottom">
+                <div class="contributers">
+                    <div >
+                        <a href="https://github.com/Akhil-gadde"  class="forhover"><i class="fas fa-envelope "></i> Contact</a>
+                        <a href="https://discordapp.com/users/akhil gadde#0509" class="forhover"><i class="fab fa-discord"></i> Discord</a>
+                        <a href="https://github.com/Akhil-gadde/TypingTest" class="forhover"><i class="fab fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </footer>  
+        </div>
+    </div>
+    <!-- java script -->
+    <script  src="./js/app.js" type="module"></script>
+    <script  src="./js/test.js" type="module"></script>
+    <!--*************-->
+</body>
+</html>
