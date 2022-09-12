@@ -28,7 +28,8 @@ let numofwordsselected=0;
 // API call
 
 async function getword() {
-  let url="https://random-word-api.herokuapp.com/word?number=1000&swear=0";
+//   let url="https://random-word-api.herokuapp.com/word?number=1000&swear=0";
+  let url="https://random-word-api.herokuapp.com/word?number=1000";
   const response = await axios.get(url);
   wordconv(response.data);
 }
